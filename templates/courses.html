@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - LearnLab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="App.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md" role="navigation">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600" aria-label="Home">LearnLab</a>
+            <div>
+                <a href="index.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Home">Home</a>
+                <a href="dashboard.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Dashboard">Dashboard</a>
+                <a href="courses.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Courses">Courses</a>
+                <a href="collaborate.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Collaborate">Collaborate</a>
+                <a href="profile.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Profile">Profile</a>
+            </div>
+            <div>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded" aria-label="Sign In" onclick="window.location.href='login.html'">Sign In</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Courses -->
+    <section class="container mx-auto px-4 py-10">
+        <h2 class="text-3xl font-bold mb-6">Courses</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded shadow" aria-labelledby="course-1">
+                <h3 id="course-1" class="text-xl font-bold mb-4">Course 1</h3>
+                <p>A comprehensive course on introductory topics.</p>
+                <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded" aria-label="Enroll in Course 1">Enroll</button>
+            </div>
+            <div class="bg-white p-6 rounded shadow" aria-labelledby="course-2">
+                <h3 id="course-2" class="text-xl font-bold mb-4">Course 2</h3>
+                <p>An advanced course diving deep into specialized topics.</p>
+                <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded" aria-label="Enroll in Course 2">Enroll</button>
+            </div>
+            <div class="bg-white p-6 rounded shadow" aria-labelledby="course-3">
+                <h3 id="course-3" class="text-xl font-bold mb-4">Course 3</h3>
+                <p>Hands-on course with practical applications and projects.</p>
+                <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded" aria-label="Enroll in Course 3">Enroll</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-600">&copy; 2024 LearnLab. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

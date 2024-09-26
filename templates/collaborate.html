@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborate - LearnLab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="App.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md" role="navigation">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600" aria-label="Home">LearnLab</a>
+            <div>
+                <a href="index.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Home">Home</a>
+                <a href="dashboard.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Dashboard">Dashboard</a>
+                <a href="courses.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Courses">Courses</a>
+                <a href="collaborate.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Collaborate">Collaborate</a>
+                <a href="profile.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Profile">Profile</a>
+            </div>
+            <div>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded" aria-label="Sign In" onclick="window.location.href='login.html'">Sign In</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Collaborate -->
+    <section class="container mx-auto px-4 py-10">
+        <h2 class="text-3xl font-bold mb-6">Collaborate</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded shadow" aria-labelledby="group-study-sessions">
+                <h3 id="group-study-sessions" class="text-xl font-bold mb-4">Group Study Sessions</h3>
+                <p>Join or create group study sessions to learn with peers.</p>
+                <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded" aria-label="Join a Session">Join a Session</button>
+            </div>
+            <div class="bg-white p-6 rounded shadow" aria-labelledby="discussion-forums">
+                <h3 id="discussion-forums" class="text-xl font-bold mb-4">Discussion Forums</h3>
+                <p>Participate in course-specific forums to discuss topics and ask questions.</p>
+                <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded" aria-label="Visit Forums">Visit Forums</button>
+            </div>
+            <div class="bg-white p-6 rounded shadow" aria-labelledby="peer-reviews">
+                <h3 id="peer-reviews" class="text-xl font-bold mb-4">Peer Reviews</h3>
+                <p>Submit and review assignments with your peers for constructive feedback.</p>
+                <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded" aria-label="Start Reviewing">Start Reviewing</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-600">&copy; 2024 LearnLab. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

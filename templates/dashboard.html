@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - LearnLab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="App.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md" role="navigation">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600" aria-label="Home">LearnLab</a>
+            <div>
+                <a href="index.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Home">Home</a>
+                <a href="dashboard.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Dashboard">Dashboard</a>
+                <a href="courses.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Courses">Courses</a>
+                <a href="collaborate.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Collaborate">Collaborate</a>
+                <a href="profile.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Profile">Profile</a>
+            </div>
+            <div>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded" aria-label="Sign In" onclick="window.location.href='login.html'">Sign In</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard -->
+    <section class="container mx-auto px-4 py-10">
+        <h2 class="text-3xl font-bold mb-6">Dashboard</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded shadow" aria-labelledby="course-progress">
+                <h3 id="course-progress" class="text-xl font-bold mb-4">Course Progress</h3>
+                <p>Track your progress in your current courses.</p>
+                <div class="mt-4">
+                    <div class="bg-gray-200 rounded-full h-4">
+                        <div class="bg-blue-600 h-4 rounded-full w-3/4" aria-label="Progress 75% Complete"></div>
+                    </div>
+                    <p class="text-right mt-2">75% Complete</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded shadow" aria-labelledby="upcoming-assignments">
+                <h3 id="upcoming-assignments" class="text-xl font-bold mb-4">Upcoming Assignments</h3>
+                <ul>
+                    <li class="mb-2">Assignment 1 - Due: 2023-10-10</li>
+                    <li class="mb-2">Assignment 2 - Due: 2023-10-15</li>
+                    <li class="mb-2">Assignment 3 - Due: 2023-10-20</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded shadow" aria-labelledby="recent-activity">
+                <h3 id="recent-activity" class="text-xl font-bold mb-4">Recent Activity</h3>
+                <ul>
+                    <li class="mb-2">Completed Lesson 1</li>
+                    <li class="mb-2">Joined Group Study Session</li>
+                    <li class="mb-2">Submitted Assignment 1</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-600">&copy; 2024 LearnLab. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

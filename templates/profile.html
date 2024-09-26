@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - LearnLab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="App.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md" role="navigation">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600" aria-label="Home">LearnLab</a>
+            <div>
+                <a href="index.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Home">Home</a>
+                <a href="dashboard.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Dashboard">Dashboard</a>
+                <a href="courses.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Courses">Courses</a>
+                <a href="collaborate.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Collaborate">Collaborate</a>
+                <a href="profile.html" class="text-gray-700 hover:text-blue-600 mx-2" aria-label="Profile">Profile</a>
+            </div>
+            <div>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded" aria-label="Sign In" onclick="window.location.href='login.html'">Sign In</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile -->
+    <section class="container mx-auto px-4 py-10">
+        <h2 class="text-3xl font-bold mb-6">Profile</h2>
+        <div class="bg-white p-6 rounded shadow">
+            <h3 class="text-xl font-bold mb-4">User Profile</h3>
+            <form>
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded" value="John Doe">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded" value="john.doe@example.com">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-gray-700">Password</label>
+                    <input type="password" id="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded">
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded" aria-label="Update Profile">Update Profile</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-600">&copy; 2024 LearnLab. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
